@@ -9,6 +9,7 @@ html {
     margin: 0 auto;
     -webkit-text-size-adjust: 100%;
     font-style: normal;
+    width: 1440px;
 }
 * {
     box-sizing: border-box;
@@ -104,4 +105,85 @@ html {
     font-size: 20px;
     line-height: 24px;
     font-family: 'Aleo';
+}
+.headerForm {
+    margin-top: 48px;
+    width: 892px;
+    height: 95px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+}
+.formInput {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    background: none;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 557px;
+}
+.formInput::placeholder {
+    color: #F2785C;
+}
+.btn {
+    width: 228px;
+    height: 59px;
+    background: #0D606F;
+    border: none;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    transition: 0.3s;
+}
+.btn:hover {
+    color: #0D606F;
+    background: #fff;
+    cursor: pointer;
+    /* box-shadow: inset 0 0 10px, 0px 2px 3px rgba(13, 96, 111, 0.36); */
+    box-shadow: 4px 7px 7px rgba(0, 0, 0, 0.5), 3px 5px 6px rgba(13, 96, 111, 0.3);
+    transition: 0.3s;
+}
+.formBtn {
+    margin-left: 45px;
+}
+.sectMain {
+    height: 1639px;
+    color: #0D606F;
+    overflow: hidden;
+}
+.mainH {
+    color: #F2785C;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+}
+.steps {
+    padding-top: 80px;
+    margin-left: 414px;
+}
+.stepBlock {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 131px;
+    width: 1177px;
+    height: 154px;
+    justify-content: space-between;
+}
+.stepElP {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
 }
