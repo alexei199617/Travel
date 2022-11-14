@@ -18,7 +18,7 @@ html {
 .sectHeader {
     width: 1440px;
     height: 765px;
-    background-image: url("header-back.jpg");
+    background-image: url("img/header-back.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
