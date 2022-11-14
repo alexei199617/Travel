@@ -1,5 +1,6 @@
 body, h1, h2, h3, h4, p, ul, ol[class], li, figure, figcaption, blockquote, dl, dd, html {
     margin: 0;
+    padding: 0;
 }
 html {
     scroll-behavior: smooth;
@@ -91,13 +92,13 @@ html {
     width: 892px;
     color: #fff;
 }
-.headerBlock h2 {
-    font-style: initial;
+.headerBlock h1 {
+    font-family: 'Aleo';
+    font-style: normal;
     font-weight: 700;
     font-size: 80px;
     line-height: 96px;
     letter-spacing: -0.5px;
-    font-family: 'Aleo';
 }
 .headerBlock p {
     margin-top: 37px;
@@ -146,6 +147,7 @@ html {
 }
 .btn:hover {
     color: #0D606F;
+
     background: #fff;
     cursor: pointer;
     /* box-shadow: inset 0 0 10px, 0px 2px 3px rgba(13, 96, 111, 0.36); */
@@ -176,9 +178,24 @@ html {
     display: flex;
     margin-top: 40px;
     margin-left: 131px;
-    width: 1177px;
+    width: 1178px;
     height: 154px;
     justify-content: space-between;
+}
+.stepEl{
+    display:block;
+}
+.elBlock {
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    background-color: #F2785C;
+    margin: auto;
+}
+.elBlock img {
+    padding-top: 28px;
+    margin: auto;
+    display: block;
 }
 .stepElP {
     font-family: 'Aleo';
@@ -186,4 +203,88 @@ html {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+    margin-top: 29px;
+}
+.stepEl2 {
+    margin-left: 72px;
+}
+.stepEl2 img {
+    padding-top: 24px;
+}
+.dest {
+    margin-left: 470px;
+    margin-top: 97px;
+}
+.destPictures {
+    margin-top: 46px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 60px;
+    width: 2520px;
+    height: 800px;
+    margin-left: -540px;
+    color: #fff;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px;
+    font-size: 32px;
+}
+.destPicture {
+    flex: none;
+    width: 800px;
+    height: 800px;
+    background-color: gray;
+    border-radius: 16px;
+}
+.destPicture p {
+    margin-top: 717px;
+    margin-left: 15px;
+}
+.pict1 {
+    background-image: url(img/pict1.jpg);
+}
+.pict2 {
+    background-image: url(img/pict2.jpg);
+}
+.pict3 {
+    background-image: url(img/pict3.jpg);
+}
+.pictControls {
+    display: flex;
+    margin: auto;
+    width: 80px;
+    /* justify-content: space-around; */
+    margin-top: 24px;
+    gap: 10px;
+    margin-left: 681px;
+}
+.control {
+    background-color: rgba(242, 120, 92, 0.5);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.control:hover {
+    background-color: #F2785C;
+    cursor: pointer;
+}
+.controlActive {
+    background-color: #F2785C;
+}
+.pictBtn {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 607px;
+    padding: 10px 32px;
+    gap: 11px;
+}
+.stoies {
+    margin-left: 552px;
+    margin-top: 80px;
 }
