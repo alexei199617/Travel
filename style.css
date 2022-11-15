@@ -24,7 +24,7 @@ html {
     background-position: center;
     background-size: cover;
 }
-.displayFlex {
+.dFlex {
     display: flex;
 }
 .headerNav {
@@ -284,7 +284,103 @@ html {
     margin-left: 607px;
     gap: 11px;
 }
-.stoies {
+.pictBtn:hover > .pictBtn-img {
+    background-image: url(img/arrow-right-hover.svg);
+    transition: 0.3s;
+}
+.pictBtn-img {
+    background: url(img/arrow-right.svg) no-repeat center;
+    height: 40px;
+    width: 40px;
+}
+.pictBtn p {
+    margin-left: -2px;
+    width: 118px;
+}
+.stories {
     margin-left: 552px;
     margin-top: 80px;
+}
+.sectFooter {
+    height: 1331px;
+    width: 1440px;
+    background: url(img/footer-back.jpg);
+}
+.sectFooterMain {
+    height: 1270px;
+    width: 1440px;
+    background: rgba(255, 255, 255, 0.7);
+    padding-top: 10px;
+    color: #0D606F;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+}
+.footElImg {
+    width: 400px;
+    height: 250px;
+    filter: drop-shadow(0px 4px 4px #0D606F);
+    border-radius: 16px;
+    margin-left: 120px;
+}
+.footElText {
+    margin-left: 40px;
+    width: 760px;
+}
+.footElBlock {
+    padding-top: 30px;
+}
+.fti1 {
+    background: url(img/foot1.jpg);
+}
+.fti2 {
+    background: url(img/foot2.jpg);
+}
+.fti3 {
+    background: url(img/foot3.jpg);
+}
+.fti4 {
+    background: url(img/foot4.jpg);
+    margin-left: 119px;
+}
+.footelH {
+    font-size: 35px;
+    line-height: 39px;
+}
+.footelP {
+    margin-top: 24.5px;
+    font-size: 20px;
+    line-height: 24px;
+}
+.footPLink {
+    font-family: 'Red Hat Text';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    transition: 0.3s;
+}
+.footPLink:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    color: #0a4b5a;
+}
+.footBtn {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 608px;
+    gap: 10px;
+    padding-left: 23.5px;
+}
+.footBtn:hover > .footBtn-img {
+    background-image: url(img/arrow-right-hover.svg);
+    transition: 0.3s;
+}
+.footBtn-img {
+    background: url(img/arrow-right.svg) no-repeat center;
+    height: 40px;
+    width: 40px;
 }
