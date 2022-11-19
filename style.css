@@ -54,20 +54,21 @@ html {
     margin-top: 9px;
     font-family: 'Red Hat Text';
 }
-.navbar nav {
+.navbar nav>ul>li {
     margin: 0 22px 0 21px;
 }
-.navbar nav>a {
+.navbar nav>ul>li>a {
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
 }
-.navbar nav>a:hover {
+.navbar nav>ul>li>a:hover {
     cursor: pointer;
     color: #0D606F;
     transition: 0.3s;
 }
 .headerBtn {
+    border: none;
     margin-left: 174px;
     width: 103px;
     height: 41px;
@@ -81,6 +82,7 @@ html {
     margin-top: -1px;
     transition: 0.3s;
     font-family: 'Red Hat Text';
+    color: #fff;
 }
 .headerBtn:hover {
     color: #0D606F;
@@ -272,11 +274,13 @@ html {
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    transition: 0.3s;
 
 }
 .control:hover {
     background-color: #F2785C;
     cursor: pointer;
+    transition: 0.3s;
 }
 .controlActive {
     background-color: #F2785C;
@@ -288,7 +292,8 @@ html {
     align-items: center;
     justify-content: center;
     margin-left: 607px;
-    gap: 11px;
+    gap: 10px;
+    padding: 10px 31px 10px 30px;
 }
 .pictBtn:hover > .pictBtn-img {
     background-image: url(img/arrow-right-hover.svg);
@@ -407,10 +412,12 @@ html {
     margin-left: 314.5px;
 }
 .footerIcon div {
+    border-radius: 30%;
     height: 34px;
     width: 34px;
     margin-left: 14px;
     margin-right: 6px;
+    transition: 0.3s;
 }
 .fi1 a {
     height: 34px;
@@ -419,7 +426,7 @@ html {
 .footerIcon div:hover {
     cursor: pointer;
     box-shadow: 0px 0px 5px 1px #fff;
-    border-radius: 30%;
+    transition: 0.3s;
 }
 .fi1 {
     background: url(img/instagram.svg) no-repeat center;

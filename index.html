@@ -9,27 +9,32 @@
     <link rel="stylesheet" href="fonts/red-hat-text.css">
     <link rel="stylesheet" href="fonts/aleo.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo-dark.svg">
     <!-- <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/aleo"> -->
     <title>Travel</title>
 </head>
 
 <body>
     <section class='sectHeader' id="header">
-        <div class="headerNav dFlex">
-            <div class="logo dFlex">
-                <img src="img/logo.svg" alt="logo" class="logoImg">
-                <p class="logoP dFlex">Travel Portal</p>
+        <header>
+            <div class="headerNav dFlex">
+                <div class="logo dFlex">
+                    <img src="img/logo.svg" alt="logo" class="logoImg">
+                    <p class="logoP dFlex">Travel Portal</p>
+                </div>
+                <div class="navbar">
+                    <nav>
+                        <ul class="dFlex" type="none">
+                            <li><a href="#header">How it Works</a></li>
+                            <li><a href="#steps">Plan Your Trip</a></li>
+                            <li><a href="#destinations">Destinations</a></li>
+                            <li><a href="#travelStories">Travel Stories</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <button class="headerBtn">Login</button>
             </div>
-            <div class="navbar dFlex">
-                <nav><a href="#header">How it Works</a></nav>
-                <nav><a href="#steps">Plan Your Trip</a></nav>
-                <nav><a href="#destinations">Destinations</a></nav>
-                <nav><a href="#travelStories">Travel Stories</a></nav>
-            </div>
-            <div class="headerBtn">
-                Login
-            </div>
-        </div>
+        </header>
         <div class="headerBlock">
             <h1>Explore the beauty of the World</h1>
             <p>Receive personalized recommendations for countries, hotels, activities and more</p>
@@ -38,47 +43,53 @@
                 <button class="btn formBtn" type="button">Start Planning</button>
             </form>
         </div>
-    </section>
-    <section class="sectMain">
-        <h3 class="mainH steps" id="steps">3 STEPS TO THE PERFECT TRIP</h3>
-        <div class="stepBlock">
-            <div class="stepEl">
-                <div class="elBlock"><img src="img/stepEl1.svg" alt="el1"></div>
-                <p class="stepElP">Tell us what you want to do</p>
-            </div>
-            <div class="stepEl stepEl2">
-                <div class="elBlock"><img src="img/stepEl2.svg" alt="el2"></div>
-                <p class="stepElP">Share us preferable dates </p>
-            </div>
-            <div class="stepEl">
-                <div class="elBlock"><img src="img/stepEl3.svg" alt="el3"></div>
-                <p class="stepElP">We will give you recommendations</p>
-            </div>
-        </div>
 
-        <h3 class="mainH dest" id="destinations">POPULAR DESTINATIONS</h3>
-        <div class="destPictures">
-            <div class="destPicture pict1">
-                <p>SPAIN</p>
-            </div>
-            <div class="destPicture pict2">
-                <p>JAPAN</p>
-            </div>
-            <div class="destPicture pict3">
-                <p>USA</p>
-            </div>
-        </div>
-        <div class=pictControls>
-            <div class="control" id="control0" value=1></div>
-            <div class="control controlActive" id="control1" value=></div>
-            <div class="control" id="control2" value=3></div>
-        </div>
-        <button type="button" name="button" class="pictBtn btn">
-            <div class="pictBtn-img"></div>
-            <p>Find More</p>
-        </button>
-        <h3 class="mainH stories" id="travelStories">TRAVEL STORIES</h3>
     </section>
+    <main class="sectMain">
+        <section>
+
+            <h2 class="mainH steps" id="steps">3 STEPS TO THE PERFECT TRIP</h2>
+            <div class="stepBlock">
+                <div class="stepEl">
+                    <div class="elBlock"><img src="img/stepEl1.svg" alt="el1"></div>
+                    <p class="stepElP">Tell us what you want to do</p>
+                </div>
+                <div class="stepEl stepEl2">
+                    <div class="elBlock"><img src="img/stepEl2.svg" alt="el2"></div>
+                    <p class="stepElP">Share us preferable dates </p>
+                </div>
+                <div class="stepEl">
+                    <div class="elBlock"><img src="img/stepEl3.svg" alt="el3"></div>
+                    <p class="stepElP">We will give you recommendations</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="mainH dest" id="destinations">POPULAR DESTINATIONS</h2>
+            <div class="destPictures">
+                <div class="destPicture pict1">
+                    <p>SPAIN</p>
+                </div>
+                <div class="destPicture pict2">
+                    <p>JAPAN</p>
+                </div>
+                <div class="destPicture pict3">
+                    <p>USA</p>
+                </div>
+            </div>
+            <div class=pictControls>
+                <div class="control" id="control0"></div>
+                <div class="control controlActive" id="control1"></div>
+                <div class="control" id="control2"></div>
+            </div>
+            <button type="button" name="button" class="pictBtn btn">
+                <div class="pictBtn-img"></div>
+                Find More
+            </button>
+            <h2 class="mainH stories" id="travelStories">TRAVEL STORIES</h2>
+
+        </section>
+    </main>
     <section class="sectFooter">
         <div class="sectFooterMain">
             <div class="footElBlock dFlex">
@@ -127,17 +138,23 @@
             </div>
             <button type="button" name="button" class="footBtn btn">
                 <div class="footBtn-img"></div>
-                <p>See More</p>
+                See More
             </button>
         </div>
-        <div class="footer dFlex">
+        <footer class="footer dFlex">
             <p class="footerP">All Rights Reserved © Travel Portal</p>
             <div class="footerIcon dFlex">
-                <a href="https://www.instagram.com/" target="_blank"><div class="fi1"></div></a>
-                <a href="https://www.youtube.com/" target="_blank"><div class="fi2"></div></a>
-                <a href="https://twitter.com/" target="_blank"><div class="fi3"></div></a>
+                <a href="https://github.com/alexei199617" target="_blank">
+                    <div class="fi1"></div>
+                </a>
+                <a href="https://github.com/alexei199617" target="_blank">
+                    <div class="fi2"></div>
+                </a>
+                <a href="https://github.com/alexei199617" target="_blank">
+                    <div class="fi3"></div>
+                </a>
             </div>
-        </div>
+        </footer>
     </section>
     <script src="script.js"></script>
 </body>
