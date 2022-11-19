@@ -4,7 +4,6 @@ body, h1, h2, h3, h4, p, ul, ol[class], li, figure, figcaption, blockquote, dl, 
 }
 html {
     scroll-behavior: smooth;
-    /* font-family: 'Lato', sans-serif; */
     max-width: 1440px;
     min-width: 320px;
     margin: 0 auto;
@@ -361,10 +360,13 @@ html {
 }
 .footelH {
     font-size: 35px;
-    line-height: 39px;
+    line-height: 37px;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
 }
 .footelP {
-    margin-top: 24.5px;
+    margin-top: 27px;
     font-size: 20px;
     line-height: 24px;
 }
