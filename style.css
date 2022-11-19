@@ -99,10 +99,10 @@ html {
 .headerBlock h1 {
     font-family: 'Aleo';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 80px;
     line-height: 96px;
-    letter-spacing: -0.5px;
+    letter-spacing: 0.91px;
 }
 .headerBlock p {
     margin-top: 37px;
@@ -325,7 +325,7 @@ html {
 .footElImg {
     width: 400px;
     height: 250px;
-    filter: drop-shadow(0px 4px 4px #0D606F);
+    filter: drop-shadow(0px 4px 2px #0D606F);
     border-radius: 16px;
     margin-left: 120px;
 }
