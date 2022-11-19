@@ -54,15 +54,20 @@ html {
     margin-top: 9px;
     font-family: 'Red Hat Text';
 }
-.navbar nav>ul>li {
+.navbarUl li {
     margin: 0 22px 0 21px;
+    type: none;
 }
-.navbar nav>ul>li>a {
+.navbarUl {
+    type: none;
+    list-style-type: none;
+}
+.navbarUl li>a {
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
 }
-.navbar nav>ul>li>a:hover {
+.navbarUl li>a:hover {
     cursor: pointer;
     color: #0D606F;
     transition: 0.3s;
@@ -370,11 +375,12 @@ html {
     line-height: 24px;
     text-decoration-line: underline;
     transition: 0.3s;
+    color: #0D606F;
 }
 .footPLink:hover {
     cursor: pointer;
     transition: 0.3s;
-    color: #0a4b5a;
+    color: #022b33;
 }
 .footBtn {
     margin-top: 40px;
