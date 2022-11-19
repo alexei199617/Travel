@@ -56,9 +56,13 @@ html {
 }
 .navbar nav {
     margin: 0 22px 0 21px;
+}
+.navbar nav>a {
+    color: #fff;
+    text-decoration: none;
     transition: 0.3s;
 }
-.navbar nav:hover {
+.navbar nav>a:hover {
     cursor: pointer;
     color: #0D606F;
     transition: 0.3s;
@@ -385,4 +389,45 @@ html {
     background: url(img/arrow-right.svg) no-repeat center;
     height: 40px;
     width: 40px;
+}
+.footer {
+    padding-top: 21px;
+}
+.footerP {
+    margin-left: 590px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #fff;
+}
+.footerIcon {
+    margin-top: -7px;
+    margin-left: 314.5px;
+}
+.footerIcon div {
+    height: 34px;
+    width: 34px;
+    margin-left: 14px;
+    margin-right: 6px;
+}
+.fi1 a {
+    height: 34px;
+    width: 34px;
+}
+.footerIcon div:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 1px #fff;
+    border-radius: 30%;
+}
+.fi1 {
+    background: url(img/instagram.svg) no-repeat center;
+}
+.fi2 {
+    background: url(img/youtube.svg) no-repeat center;
+}
+.fi3 {
+    margin-top: -1px;
+    background: url(img/twitter.svg) no-repeat center;
 }
