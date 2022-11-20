@@ -159,7 +159,6 @@ html {
 }
 .btn:hover {
     color: #0D606F;
-
     background: #fff;
     cursor: pointer;
     box-shadow: 4px 7px 7px rgba(0, 0, 0, 0.5), 3px 5px 6px rgba(13, 96, 111, 0.3);
@@ -234,22 +233,21 @@ html {
     align-items: flex-start;
     padding: 0px;
     gap: 60px;
-    width: 2520px;
+    width: 4240px;
     height: 800px;
-    margin-left: -540px;
+    margin-left: -1400px;
     color: #fff;
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
     line-height: 44px;
     font-size: 32px;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 .destPicture {
     flex: none;
     width: 800px;
     height: 800px;
-    background-color: gray;
     border-radius: 16px;
 }
 .destPicture p {
@@ -264,6 +262,38 @@ html {
 }
 .pict3 {
     background-image: url(img/pict3.jpg);
+}
+.destPictAbsolBlock {
+    top: 1288px;
+    position: absolute;
+    width: 1440px;
+    margin: auto;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+.dNone {
+    display: none;
+}
+.destPictAbsol {
+    display: block;
+    width: 260px;
+    height: 800px;
+    transition: 0.3s;
+}
+.leftarr {
+    border-radius: 0 16px 16px 0;
+}
+.rightarr {
+    border-radius: 16px 0 0 16px;
+}
+.destPictAbsol:hover {
+    cursor: pointer;
+    background-color: #0002;
+    transition: 0.3s;
+}
+.destPictAbsol:active{
+    background-color: #fff0;
+    transition: 0.3s;
 }
 .pictControls {
     display: flex;
@@ -445,4 +475,158 @@ html {
 .fi3 {
     margin-top: -1px;
     background: url(img/twitter.svg) no-repeat center;
+}
+.sectPopup {
+    padding-top: 5%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #0D606F;
+}
+.popupBlock {
+    padding: 23px 45px 20px;
+    width: 650px;
+    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    margin: auto;
+    color: #0D606F;
+    text-align: center;
+}
+.login {
+    height: 660px;
+}
+.popupBlock h3 {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.4px;
+}
+.popupBtn {
+    border: none;
+    width: 560px;
+    height: 56px;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+    font-family: 'Red Hat Text';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    transition: 0.3s;
+}
+.popupBtn:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 4px 7px 7px rgba(0, 0, 0, 0.5), 3px 5px 6px rgba(13, 96, 111, 0.3);
+}
+.faceBtn {
+    background: #1877F2;
+    color: #fff;
+    margin-top: 32px;
+}
+.googlBtn {
+    margin-top: 20px;
+    background: #fff;
+    color: #0D606F;
+}
+.lineOrBox {
+    margin-top: 29px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+.lineOr {
+    border-bottom: 1px solid rgba(13, 96, 111, 0.5);
+    width: 261px;
+    height: 0px;
+    margin-top: 12px;
+}
+.lineOrP {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(13, 96, 111, 0.5);
+    width: 20px;
+    height: 24px;
+}
+.sectPopup form>p {
+    margin-bottom: 6px;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0D606F;
+    text-align: left;
+}
+.sectPopup form>input {
+    padding: 0;
+    outline: none;
+    border: none;
+    margin-bottom: 19px;
+    border-radius: 10px;
+    background: #fff;
+    width: 560px;
+    height: 54px;
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+    font-size: 16px;
+    line-height: 19px;
+}
+.popupFormBtn {
+    margin-top: 6px;
+    margin-bottom: 10px;
+    font-family: 'Red Hat Text';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #fff;
+    background: #0D606F;
+    height: 54px;
+}
+.popA {
+    font-family: 'Aleo';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+    color: #0D606F;
+    letter-spacing: 0.1px;
+}
+.popLine {
+    margin-top: 24px;
+    margin-bottom: 20px;
+    width: 560px;
+    height: 0px;
+    border-bottom: 1px solid rgba(13, 96, 111, 0.5);
+}
+.popP {
+    color: rgba(13, 96, 111, 0.5);
+}
+.signup {
+    height: 436px;
+    padding: 23px 46px 10px 44px;
+}
+.signH {
+    margin-bottom: 31px;
+}
+.signLine {
+    margin-top: 26px;
+    margin-bottom: 19px;
+}
+.logP {
+    margin-left: 5px;
+}
+.logA {
+    letter-spacing: -0.3px;
 }

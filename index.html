@@ -30,7 +30,7 @@
                         </ul>
                     </nav>
                 </div>
-                <button class="headerBtn">Login</button>
+                <button class="headerBtn" id="loginBtn">Login</button>
             </div>
         </header>
         <div class="headerBlock">
@@ -65,6 +65,9 @@
         <section>
             <h2 class="mainH dest" id="destinations">POPULAR DESTINATIONS</h2>
             <div class="destPictures">
+                <div class="destPicture pict3">
+                    <p>USA</p>
+                </div>
                 <div class="destPicture pict1">
                     <p>SPAIN</p>
                 </div>
@@ -74,6 +77,13 @@
                 <div class="destPicture pict3">
                     <p>USA</p>
                 </div>
+                <div class="destPicture pict1">
+                    <p>SPAIN</p>
+                </div>
+            </div>
+            <div class="destPictAbsolBlock dFlex" id="destPictAbsolBlock">
+                <div class="destPictAbsol leftarr"></div>
+                <div class="destPictAbsol rightarr"></div>
             </div>
             <div class=pictControls>
                 <div class="control" id="control0"></div>
@@ -153,6 +163,56 @@
                 </a>
             </div>
         </footer>
+    </section>
+    <section class="sectPopup dNone" id="popup">
+        <div class="login popupBlock" id="login">
+            <h3>Log in to your account</h3>
+            <button type="button" class="faceBtn popupBtn">
+                <img src="img/facebook.svg" alt="facebook">
+                Sign In with Facebook
+            </button>
+            <button type="button" class="googlBtn popupBtn">
+                <img src="img/google.svg" alt="google">
+                Sign In with Google
+            </button>
+            <div class="lineOrBox dFlex">
+                <div class=lineOr></div>
+                <p class="lineOrP">or</p>
+                <div class=lineOr></div>
+            </div>
+            <form action="">
+                <p class="popPup">E-mail</p>
+                <input type="email" class="popFormEl" required autocomplete="off" id="popFormMailIn">
+                <p>Password</p>
+                <input type="password" class="popFormEl" required autocomplete="off" id="popFormPassIn">
+                <button type="submit" class="popupFormBtn popupBtn btn" id="popFormBtmIn">
+                    Sign In
+                </button>
+            </form>
+            <a href="" class="popA">Forgot Your Password?</a>
+            <div class="popLine"></div>
+            <p class="popA popP">
+                Don’t have an account?
+                <a href="" class="popA" id="signupLink">Register</a>
+            </p>
+        </div>
+        <div class="popupBlock signup dNone" id="signup">
+            <h3 class="signH">Create account</h3>
+            <form action="">
+                <p class="popPup">E-mail</p>
+                <input type="email" class="popFormEl" required autocomplete="off">
+                <p>Password</p>
+                <input type="password" class="popFormEl" required autocomplete="off">
+                <button type="submit" class="popupFormBtn popupBtn btn">
+                    Sign Up
+                </button>
+            </form>
+            <div class="popLine signLine"></div>
+            <p class="popA popP logP">
+                Already have an account?
+                <a href="" class="popA logA" id="signinLink">Log in</a>
+            </p>
+        </div>
     </section>
     <script src="script.js"></script>
 </body>
