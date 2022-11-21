@@ -60,27 +60,32 @@ function popupExit (el) {
         popup.classList.add('dNone');
         login.classList.remove('dNone');
         signup.classList.add('dNone');
-        document.querySelectorAll('.popFormEl').forEach(function(item) {
-            item.value = '';
-        });
+        formCleer();
     }
 }
+function formCleer () {
+    document.querySelectorAll('.popFormEl').forEach(function(item) {
+        item.value = '';
+    });
+}
 document.getElementById('signupLink').addEventListener('click', func =>{
+    formCleer();
     login.classList.add('dNone');
     signup.classList.remove('dNone');
 });
 document.getElementById('signinLink').addEventListener('click', func =>{
+    formCleer();
     login.classList.remove('dNone');
     signup.classList.add('dNone');
 });
-document.getElementById('popFormBtmIn').addEventListener('submit', message);
-function message (event) {
-    event.preventDefault();
-    console.log('tr')
-    let mail = document.getElementById('popFormMailIn').value.toString();;
-    let pass = document.getElementById('popFormPassIn').value.toString();;
-    console.log('pr')
-    console.log(mail + ' ' + pass)
-    alert('Login: ' + mail + '\n' + 'Password: ' + pass);
-    // popupExit (true)
-}
+
+document.getElementById('popFormBtmIn').addEventListener('click', func =>{
+    let mail = document.getElementById('popFormMailIn').value.toString();
+    let pass = document.getElementById('popFormPassIn').value.toString();
+    if (mail != '' && pass != '') {
+        alert('Login: ' + mail + '\n' + 'Password: ' + pass);
+        popupExit (true);
+    } else {
+        alert('Enter your details')
+    }
+})
